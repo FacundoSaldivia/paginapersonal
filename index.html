@@ -35,13 +35,13 @@
     
     <div class="fixed-bg">
       <div class="container container-img">
-        <h1 class="py-5 text-center text-light" >Hola! Mi nombre es Facu</h1>
+        <h1 class="py-5 text-center text-white" >Hola! Mi nombre es<span class="nombre"> Facundo</span></h1>
         <p class="py-5 text-center text-white">Y esta, es mi pagina</p>
       </div>
     </div>
     <!--Contenedor de aboutme-->
-    <div id="about-me" class="container-fluid bg-light container-gris">
-      <h1 class="py-5 text-center text-black">Un poco sobre mi</h1>
+    <div id="about-me" class=" about-me container-fluid">
+      <h1 class="py-5 text-center">Un poco sobre <span class="nombre"> Mi</span></h1>
       <!--Txt center to center the img-->
       <div class="text-center">
         <div class="container-fliud"><img class="rounded-circle" src="img/me.jpg" alt=""></div>
@@ -56,13 +56,13 @@
 
     <!--Contenedor de servicios (tecnologias antes)-->
 
-    <div id="servicios" class="container container-gris">
-      <h1 class="py-5 text-center text-black" style="font-family: 'Space Mono', monospace;">Lo que hago</h1>
+    <div id="servicios" class="servicios container-fluid ">
+      <h1 class="py-5 text-center text-black">Lo que <span class="nombre"> Hago</span></h1>
       <div class="container-fluid container-tech">
         <div class="row">
           <div class="col-sm text-center ">
             <img class="icon text-center" src="img/dev.png" alt="">
-            <h3 class="text-center" >Development</h3>
+            <h3 class="text-center" ><span class="nombre"> Desarrollo</span></h3>
             <!--Espaciar el parrafo del otro-->
             <div class="container-parrafo">
               <p class="py-5 text-center" >Me apasiona el desarrollo web y me interesa el desarrollo de aplicaciones, pero me gustaria expandirme y crecer como un desarrollador.<br>A medida que crezca busco mejorar mis hablidades escribiendo y comprendiendo codigo, espero algun dia escrbir codigo que sea usado por otros desarrolladores</p>
@@ -70,7 +70,7 @@
           </div>
           <div class="col-sm text-center ">
             <img class="icon text-center" src="img/design.png" alt="">
-            <h3 class="text-center" >Design</h3>
+            <h3 class="text-center" ><span class="nombre"> Diseño</span></h3>
             <div class="container-parrafo">
               <p class="py-5 text-center" >El diseño no es solo como se ve el producto, tambien comprende la funcionalidad como tambien la usabilidad de la interface.<br>Me esmero para el dia de mañana poder diseñar interfaces que la gente pueda disfrutar</p>
             </div>
@@ -80,26 +80,38 @@
     </div>
     
     <!--Proyectos-->
-    <div id="proyectos" class="container bg-light container-proyecto"><h1 class="text-center">Proyectos</h1></div>
-    <div class="gallery">
-      <figure class="gallery__item gallery__item--1">
-          <a href="https://facundosaldivia.github.io/photographyblog/" target="_blank"><img src="img/pagina1.png" class="gallery__img" alt="pagina1"></a>
-      </figure>
-      <figure class="gallery__item gallery__item--2">
-        <a href="https://facundosaldivia.github.io/Calculadora/" target="_blank"><img src="img/pagina2.png" class="gallery__img" alt="pagina2"></a>
-      </figure>
-      <figure class="gallery__item gallery__item--3">
-        <a href="https://github.com/FacundoSaldivia/photographyblog" target="_blank"><img src="img/git.png" class="gallery__img" alt="git-1"></a>
-      </figure>
-      <figure class="gallery__item gallery__item--4">
-        <a href="https://github.com/FacundoSaldivia/Calculadora" target="_blank"><img src="img/git.png" class="gallery__img" alt="git-2"></a>
-      </figure>
+
+    <div id="proyectos" class="proyectos">
+      <div class="proyecto-titulo"><h1 class="py-5 text-center"><span class="nombre"> Proyectos</span></h1></div>
+        <div class="proyecto" alt= "img/pagina1.png">
+          <p class="proyecto-nombre"> Pagina de fotografia</p>
+          <p class="proyecto-tecnologias">Html Css JavaScript Bootstrap</p>
+          <p alt= 'https://github.com/FacundoSaldivia/photographyblog' src = 'https://facundosaldivia.github.io/photographyblog/'>Esta es una pagina web que diseñe entorno a la fotografia, utlizando html,sass,bootstrap y JavaScript</p>
+        </div>
+        <div class="proyecto" alt= "img/pagina2.png">
+          <p class="proyecto-nombre"> Calculadora</p>
+          <p class="proyecto-tecnologias">Html Css JavaScript</p> 
+          <p></p>
+        </div>    
     </div>
+    <div class="modal1">
+      <div class="container-modal">
+        <a class="pageLink" target="_blank" href=""><img src="" alt="img" class="img"></a>
+        <p class="caption">asdasdsadasdsadsadasd</p>
+        <div class="links">
+          <a class="gitIcon" target="_blank" href=""><img src="img/git.png" alt="git" width="10%"></a>
+        </div>
+      </div>
+    </div>
+
+
+     <!--Footer-->
     <footer id="footer"  class=''>
       <div class="">© 2020 Copyright:
         <a target= "_blank" href="https://github.com/FacundoSaldivia"> Facundo Saldivia</a>
       </div>   
-  </footer>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
