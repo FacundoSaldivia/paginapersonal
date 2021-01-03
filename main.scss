@@ -84,6 +84,17 @@ h3 {
 }
 .container-img {
   padding-top: 13%;
+  opacity: 1;
+  animation: fadeIn 3s ease;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   h1,
   p {
     color: var(--color-7);
@@ -227,12 +238,18 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media (max-width: 640px) {
-  .navbar-custom {
-    height: 46px;
-    display: flex !important;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
+  .navbar {
+    background-color: var(--color-0);
+    .navbar-nav {
+      padding-left: 4%;
+      a {
+        margin: 0px 10px;
+        color: var(--color-2);
+      }
+      a:hover {
+        color: var(--color-6);
+      }
+    }
   }
   a {
     margin: 0px 0px;
