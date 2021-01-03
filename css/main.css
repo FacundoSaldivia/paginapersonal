@@ -142,6 +142,10 @@ h3 {
   padding: 5% 20%;
 }
 
+.servicios .container-tech .icon {
+  filter: brightness(0%);
+}
+
 .proyectos {
   padding-bottom: 200px !important;
   background-color: var(--color-1);

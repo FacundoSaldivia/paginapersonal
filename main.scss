@@ -119,6 +119,9 @@ h3 {
   padding: 0;
   .container-tech {
     padding: 5% 20%;
+    .icon {
+      filter: brightness(0%);
+    }
   }
 }
 .proyectos {
