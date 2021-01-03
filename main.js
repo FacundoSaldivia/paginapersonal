@@ -7,7 +7,7 @@ const pageLink = document.querySelector('.pageLink');
 
 projects.forEach((preview) => {
   preview.addEventListener('click', ()=>{
-    if(screen.width > 1000){
+
       modal1.classList.add('open');
       original.classList.add('open');
       //Cambio dinamico de imagen y texto
@@ -19,7 +19,7 @@ projects.forEach((preview) => {
       gitIcon.setAttribute('href',linkGit) ;
       const pageLinkSrc = preview.lastElementChild.getAttribute('src');
       pageLink.setAttribute('href',pageLinkSrc);
-    }
+
   })
 })
 

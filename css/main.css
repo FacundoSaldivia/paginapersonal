@@ -20,6 +20,23 @@ html {
   --color-10: #ffba08;
 }
 
+.navbar {
+  background-color: var(--color-0);
+}
+
+.navbar .navbar-nav {
+  padding-left: 5.5%;
+}
+
+.navbar .navbar-nav a {
+  margin: 0px 30px;
+  color: var(--color-2);
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--color-6);
+}
+
 .proyectos,
 .servicios,
 .about-me {
@@ -39,10 +56,6 @@ h1 {
 
 h3 {
   font-size: 32px !important;
-}
-
-a {
-  margin: 0px 30px;
 }
 
 .container-gris {
@@ -87,25 +100,6 @@ a {
   color: var(--color-6) !important;
 }
 
-.barra-centrada {
-  display: flex;
-  align-content: center;
-  justify-items: center;
-}
-
-.navbar-custom {
-  background-color: var(--color-0);
-}
-
-.nav-link {
-  word-spacing: 0.2rem !important;
-}
-
-.icon {
-  max-width: 100%;
-  padding: 0%;
-}
-
 .bg.dexpanded {
   max-height: 10%;
 }
@@ -136,9 +130,9 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 20px 22%;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: var(--color-0);
-  box-shadow: 4px 8px 18px black;
+  box-shadow: 1px 2px 8px black;
 }
 
 .proyectos .proyecto p {
@@ -160,6 +154,10 @@ a {
   text-align: right;
 }
 
+.proyectos .proyecto:hover {
+  cursor: pointer;
+}
+
 .modal1 {
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -178,29 +176,38 @@ a {
 .modal1 .container-modal {
   background-color: var(--color-1);
   width: 70%;
-  height: 50%;
+  height: 45%;
   border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .modal1 .container-modal .img {
-  margin: 50px 0px 0px 50px;
-  width: 40%;
+  margin: 0 20px;
+  width: 100%;
   border: 4px solid var(--color-0);
   border-radius: 6px;
+  margin-top: 30px;
 }
 
-.modal1 .container-modal .caption {
-  position: relative;
-  width: 50%;
-  float: right;
-  padding: 5% 3% 5% 0%;
+.modal1 .container-modal .description {
+  padding: 50px 20px 0 50px;
+}
+
+.modal1 .container-modal .description .text-center {
+  font-weight: 600;
+  font-size: 120%;
+  text-align: center !important;
 }
 
 .modal1 .container-modal .links {
-  position: relative;
-  width: 50%;
-  padding-left: 22.2%;
-  padding-top: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.modal1 .container-modal .links img {
+  width: 30px;
 }
 
 .modal1.open {
@@ -269,6 +276,34 @@ body::-webkit-scrollbar-thumb {
   }
   .container-tech {
     padding: 0 !important;
+  }
+  .proyectos .proyecto {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .proyectos .proyecto .proyecto-nombre {
+    text-align: center;
+  }
+  .proyectos .proyecto .proyecto-tecnologias {
+    display: none;
+  }
+  .modal1 .container-modal {
+    width: 90%;
+    height: 90%;
+    display: block;
+  }
+  .modal1 .container-modal .img {
+    border: none;
+    border-radius: 0px;
+    padding: 10px;
+  }
+  .modal1 .container-modal .description {
+    padding: 10% 10px;
+    text-align: center;
+  }
+  .modal1 .container-modal .links {
+    display: none;
   }
 }
 
