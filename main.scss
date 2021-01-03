@@ -100,8 +100,11 @@ h3 {
     color: var(--color-7);
   }
 }
-.nombre {
+.title {
   color: var(--color-6) !important;
+}
+.title-2 {
+  color: var(--color-8);
 }
 
 .bg.dexpanded {
@@ -142,7 +145,7 @@ h3 {
       display: none;
     }
     .proyecto-nombre {
-      color: var(--color-9);
+      color: var(--color-8);
       text-align: left;
     }
     .proyecto-tecnologias {
@@ -233,7 +236,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #1d1d1d; /* color of the scroll thumb */
   border-radius: 0px; /* roundness of the scroll thumb */
-  border: 3px solid white; /* creates padding around scroll thumb */
+  border: transparent; /* creates padding around scroll thumb */
 }
 @media (min-width: 640px) {
   .container-1 {

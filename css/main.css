@@ -117,8 +117,12 @@ h3 {
   color: var(--color-7);
 }
 
-.nombre {
+.title {
   color: var(--color-6) !important;
+}
+
+.title-2 {
+  color: var(--color-8);
 }
 
 .bg.dexpanded {
@@ -170,7 +174,7 @@ h3 {
 }
 
 .proyectos .proyecto .proyecto-nombre {
-  color: var(--color-9);
+  color: var(--color-8);
   text-align: left;
 }
 
@@ -272,7 +276,7 @@ body::-webkit-scrollbar-thumb {
   /* color of the scroll thumb */
   border-radius: 0px;
   /* roundness of the scroll thumb */
-  border: 3px solid white;
+  border: transparent;
   /* creates padding around scroll thumb */
 }
 
