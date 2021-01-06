@@ -25,6 +25,14 @@ projects.forEach((preview) => {
 
 modal1.addEventListener('click',(e)=>{
   if(e.target.classList.contains('modal1')){
+    console.log(e.target.classList)
+    modal1.classList.remove('open');
+    original.classList.remove('open');
+  }
+})
+
+modal1.addEventListener('click', (e) => {
+  if (e.target.classList.contains('button-x')){
     modal1.classList.remove('open');
     original.classList.remove('open');
   }

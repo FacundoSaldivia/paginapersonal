@@ -229,6 +229,10 @@ h3 {
   text-align: center !important;
 }
 
+.modal1 .container-modal .description .x-botton {
+  display: none;
+}
+
 .modal1 .container-modal .links {
   display: flex;
   align-content: center;
@@ -334,6 +338,22 @@ body::-webkit-scrollbar-thumb {
   .modal1 .container-modal .description {
     padding: 10% 10px;
     text-align: center;
+  }
+  .modal1 .container-modal .description .button-x {
+    display: inline;
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    font-size: 150%;
+    color: var(--color-10);
+    border-style: none;
+    background-color: transparent;
+  }
+  .modal1 .container-modal .description button:focus {
+    outline: 0;
   }
   .modal1 .container-modal .links {
     display: none;
