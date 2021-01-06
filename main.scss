@@ -166,7 +166,7 @@ h3 {
   height: 100%;
   opacity: 0;
   pointer-events: none;
-  transition: 0.5s ease-out;
+  transition: 1.3s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +177,8 @@ h3 {
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    transform: scale(1);
+    animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
     .img {
       margin: 0 20px;
       width: 100%;
@@ -210,6 +211,10 @@ h3 {
   opacity: 1;
   pointer-events: all;
   transition: 0.5s;
+  .container-modal {
+    transform: scaleY(0.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
 }
 
 #footer {
@@ -302,7 +307,7 @@ body::-webkit-scrollbar-thumb {
         .button-x {
           display: inline;
           position: absolute;
-          top: 90vh;
+          top: 80vh;
           left: 50%;
           padding: 0;
           margin: 0;
@@ -324,3 +329,27 @@ body::-webkit-scrollbar-thumb {
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+@keyframes unfoldIn {
+  0% {
+    transform: scaleY(0.005) scaleX(0);
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    transform: scaleY(1) scaleX(1);
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(0.005) scaleX(0);
+  }
+}
