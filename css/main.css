@@ -337,8 +337,8 @@ body::-webkit-scrollbar-thumb {
     display: none;
   }
   .modal1 .container-modal {
-    width: 90%;
-    height: 90%;
+    width: 90vw;
+    height: 90vh;
     display: inline;
   }
   .modal1 .container-modal .pageLink {
