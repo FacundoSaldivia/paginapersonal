@@ -24,7 +24,7 @@ html {
 .navbar {
   background-color: var(--color-0);
   .navbar-nav {
-    padding-left: 5.5%;
+    padding-left: 3.5%;
     a {
       margin: 0px 30px;
       color: var(--color-2);
@@ -173,7 +173,7 @@ h3 {
   .container-modal {
     background-color: var(--color-1);
     width: 70%;
-    height: 45%;
+    height: 48%;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -190,7 +190,7 @@ h3 {
       padding: 50px 20px 0 50px;
       .text-center {
         font-weight: 600;
-        font-size: 120%;
+        font-size: 100%;
         text-align: center !important;
       }
       .button-x {
@@ -201,8 +201,9 @@ h3 {
       display: flex;
       align-content: center;
       justify-content: center;
+      margin-left: 6%;
       img {
-        width: 30px;
+        width: 2vw;
       }
     }
   }
